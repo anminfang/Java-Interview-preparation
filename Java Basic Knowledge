@@ -10,4 +10,46 @@ JDK -- Java Development Kit
 JRE -- Java Runtime Environment
 JVM -- Java Virtual Machine
 
-4. 
+4. String VS StringBuilder VS StringBuffer
+String can not be changed. If you want to change string, actually it's to create a new string to replace old string. But, it's thread safety.
+StringBuilder and StringBuffer have insert, append, indexOf etc. public methods. But each method in StringBuffer is synchronized, due to this
+it does not allow two threads to simultaneously access the same methos, so, StringBuffer is thread safe. StringBuilder does not have this
+function, so, StringBuilder is not thread safe.
+
+5. Abstarct VS Interface
+a. Type of methods: Interface can have only abstract methods. Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.
+b. Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables.
+c. Type of variables: Abstract class can have final, non-final, static and non-static variables. Interface has only static and final variables.
+d. Implementation: Abstract class can provide the implementation of interface.	Interface can’t provide the implementation of abstract class.
+e. Inheritance vs Abstraction: A Java interface can be implemented using keyword “implements” and abstract class can be extended using keyword “extends”.
+f. Multiple implementation: An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
+g. Accessibility of Data Members: Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
+
+6. == VS equals
+a. == is to tell address is the same or nor. When used in primitive data type, == is used to tell value is the same or not. When in reference
+type, == is to used to compare the address.
+b. equals is used to compare two objects.
+
+7. Process VS Thread
+Process is a program in execution, thread is a part of the process. Process and thread share a relationship where a process provides an
+environment for the execution of the thread.
+Definition of Thread
+The threads are extensively used in Java-enabled browsers. A thread is a part of a process. A process can contain multiple threads.
+These multiple threads in a process share the same address space of the process. Each thread has its own stack and register to operate
+on.
+Key Differences Between Process and Thread in Java
+1. A process is an executing program whereas, the thread is a small part of a process.
+2. Each process has its own address space whereas, the threads of the same process share the address space as that of the process.
+3. In process based multitasking, more than two processes can run at the same time whereas, in thread-based multitasking, more than two thread can run at the same time.
+4. Inter-process communication between two processes is costlier than inter-thread communication.
+5. Context switching between two processes is expensive and limited as compared to context switching between two threads.
+6. A process is also called the heavyweight task whereas, the thread is called lightweight task.
+7. Multitasking over a process is not under the control of Java whereas, the Multitasking over multithreading is under the control of Java.
+8. Components contained by a process its own address space, global variables, signal handlers, open files, child processes, accounting information. On the other hand, a thread contains its own register, state, stack, program counter.
+
+
+
+
+
+
+
