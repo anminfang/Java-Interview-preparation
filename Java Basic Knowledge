@@ -1,0 +1,13 @@
+1. Three Object-Oriented Programming Characteristics: Capsulation, Inheritance, Polymorphism.
+
+2. Override VS Overload
+Override is happening in superclass and subclass. Such as interface class has a method and another class implements interface will have
+the same method but have different action. The name of method and parameters of method should be the same. Overload is happening in the
+same class. But, they can have different return data type, parameters etc.
+
+3. JDK, JRE and JVM
+JDK -- Java Development Kit
+JRE -- Java Runtime Environment
+JVM -- Java Virtual Machine
+
+4. 
