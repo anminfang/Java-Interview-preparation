@@ -1,2 +1,2 @@
 # Java-Interview-preparation
-Java Basic knowledges
+Java Basic & Advanced Knowledges 
