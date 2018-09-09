@@ -47,7 +47,10 @@ Key Differences Between Process and Thread in Java
 7. Multitasking over a process is not under the control of Java whereas, the Multitasking over multithreading is under the control of Java.
 8. Components contained by a process its own address space, global variables, signal handlers, open files, child processes, accounting information. On the other hand, a thread contains its own register, state, stack, program counter.
 
-
+8. Comparable VS Comparator
+A object class can have inheritance relationship from comparable, then this object class will you compareTo method to sort. Unlike
+Comparable, Comparator is external to the element type we are comparing. It’s a separate class. We create multiple separate classes
+(that implement Comparator) to compare by different members.
 
 
 
